@@ -168,6 +168,10 @@ h1 {
     background-size: cover;
     margin-left: 20px;
 }
+.redheadquarter{
+    background-color: purple;
+    color: red;
+}
 .headquarter-section-place {
     width: 133px;
     margin-left: 90px;
