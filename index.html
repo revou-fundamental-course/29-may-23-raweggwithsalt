@@ -1,12 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="tugas portfolio RevoU">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="anders">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <header>
+                <img src="image/spidey.png" alt="spidey.png">
+                <div class="flex">
+                    <div class="a"><a href="index.html">Home</a></div>
+                    <div class="a"><a href="profile.html">Our Profile</a></div>
+                    <div class="a">Portofolio</div>
+                    <div class="a"><a href="#bottom">Message Us</a></div>
+                </div>
+        </header>
+        <h1>
+            Hi, <span id="name"></span> . Welcome to the <font color="red">Spider</font> <font color="blue">Society</font>
+        </h1>
+        <script src="js/header.js"></script>
+        <br>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="slide first">
+                    <img src="image/spide2.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="image/spide3.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="image/spide1.jpeg">
+                </div>
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+        <script src="js/slide.js"></script>
+        <br><br>
+        <div class="borderafterslide"></div>
+        <h2>Our Headquarter</h2> <br>
+        <div class="headquarter">
+            <div class="headquarter-section1"></div>
+            <div class="headquarter-section2"></div>
+            <div class="headquarter-section3"></div>
+        </div>
+        <div class="headquarter">
+            <div class="headquarter-section-place">Jakarta</div>
+            <div class="headquarter-section-place">Singapore</div>
+            <div class="headquarter-section-place">Japan</div>
+        </div> <br>
+        <div class="borderafterslide"></div>
+        <h2 id="bottom">Message Us</h2>
+        <div class="messageus">
+        <table>
+            <form name="message-form" onsubmit="return validateForm()">
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input placeholder="Nama" class="mu" type="text" name="full-name"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td><input class="mu" type="date" name="birth-date"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                <input type="radio" id="male" name="gender" value="Laki-Laki"><label for="male">Laki-Laki</label>
+                <input type="radio" id="female" name="gender" value="Perempuan"><label for="female">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Pesan</td>
+                <td>:</td>
+                <td><textarea name="messages" placeholder="Pesan" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="3"><input class="submit" type="submit" value="Submit"></td>
+            </tr>
+            </form>
+        </table>
+        <br>
+        <script src="js/messageus.js"></script>
+        
+        <div class="hasil-data">
+            <p>Current time : <span id="time"></span></p>
+            <br>
+            <p>Nama : <span id="sender-full-name"></span></p>
+            <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
+            <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+            <p>Pesan : <span id="sender-messages"></span></p>
+        </div>
+        </div> <br>
+        <script src="js/currenttime.js"></script>
+        <div class="borderafterslide"></div>
+    </body>
 </html>
